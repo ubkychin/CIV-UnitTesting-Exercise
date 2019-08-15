@@ -1,22 +1,6 @@
 ﻿namespace CIV_UnitTesting_Exercises {
     public class RecursiveCalculations {
-        
-        /// <summary>
-        /// Returns the nth Fibonacci number
-        /// </summary>
-        /// <param name="num1"></param>
-        /// <param name="num2"></param>
-        /// <param name="numFibs"></param>
-        /// <returns></returns>
-        public int FibonacciRec(int num1, int num2, int numFibs) {
-            if (numFibs > 0) {
-                numFibs--;
-                num2 = num1 + num2;
-                return FibocacciRec(num2, num2 + num1, numFibs);
-            }        
-            return num2 + num1;
-        }
-        
+               
         /// <summary>
         /// Returns the factorial for given input.  Initialise ans with 1
         /// </summary>
@@ -70,6 +54,22 @@
             }
 
             return false;
+        }
+        
+        /// <summary>
+        /// Returns the nth Fibonacci number
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <param name="numFibs"></param>
+        /// <returns></returns>
+        public int FibonacciRec(int num1, int num2, int numFibs) {
+            if (numFibs > 0) {
+                numFibs--;
+                num2 = num1 + num2;
+                return FibocacciRec(num2, num2 + num1, numFibs);
+            }        
+            return num2 + num1;
         }
     }
 }
